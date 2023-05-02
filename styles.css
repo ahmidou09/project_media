@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* (10px / 16px) * 100 = 62.5%  => 1rem = 10px */
+}
+
+/* ////////////////////////////////// layout ///////////////////// */
+
+.header {
+  height: 6rem;
+  background-color: rgb(0, 0, 0);
+}
+.container {
+  max-width: 175.4rem;
+  margin: 0 auto;
+
+  /* for test */
+  background-color: blue;
+  min-height: 80rem;
+}
+.content {
+  display: flex;
+
+  /* for test */
+  height: 80rem;
+  background-color: orangered;
+}
+.main {
+  flex: 1;
+
+  /* for test */
+  background-color: aqua;
+}
+.aside {
+  flex: 0 0 23%;
+
+  /* for test */
+  background-color: yellowgreen;
+}
+.footer {
+  height: 7rem;
+
+  /* for test */
+  background-color: black;
+}
