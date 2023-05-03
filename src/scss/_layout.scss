@@ -1,0 +1,32 @@
+.header {
+  height: 6rem;
+  background-color: rgb(0, 0, 0);
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container {
+  max-width: 175.4rem;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  padding: 2rem 2rem;
+}
+.main {
+  flex: 1;
+}
+.aside {
+  flex: 0 0 23%;
+
+  /* for test */
+  background-color: yellowgreen;
+  height: 120rem;
+}
+.footer {
+  height: 7rem;
+
+  /* for test */
+  background-color: rgb(44, 17, 175);
+}

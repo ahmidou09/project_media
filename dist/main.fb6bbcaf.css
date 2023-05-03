@@ -1,5 +1,4 @@
-/************************ base ***********************************/
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,11 +16,24 @@ html {
 }
 
 body {
-  font-family: "Roboto";
-  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+  background-color: #0f0f0f;
+  font-weight: 400;
 }
 
-/* ////////////////////////////////// layout ///////////////////// */
+.plyer {
+  height: 72rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 2.8rem;
+}
 
 .header {
   height: 6rem;
@@ -31,135 +43,119 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .container {
   max-width: 175.4rem;
   margin: 0 auto;
-
-  /* for test */
-  background-color: blue;
-  min-height: 80rem;
 }
+
 .content {
   display: flex;
-
-  /* for test */
-  height: 80rem;
-  background-color: orangered;
+  padding: 2rem 2rem;
 }
+
 .main {
   flex: 1;
-
-  /* for test */
-  background-color: rgb(1, 8, 8);
 }
+
 .aside {
   flex: 0 0 23%;
-
   /* for test */
   background-color: yellowgreen;
+  height: 120rem;
 }
+
 .footer {
   height: 7rem;
-
   /* for test */
-  background-color: black;
-}
-
-/*****************components*****************************/
-
-.btn {
-  background-color: transparent;
-  border: none;
+  background-color: rgb(44, 17, 175);
 }
 
 .icon {
   fill: #fff;
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-}
-
-/**************box of logo**************************/
-.box-logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.menu-btn {
-  background-color: transparent;
-  border: none;
-}
-
-.menu-icon {
-  margin-right: 2rem;
   width: 2.25rem;
   height: 2.25rem;
 }
 
-.logo-img {
+.btn {
+  border: none;
+  background-color: rgba(39, 39, 39, 0.1568627451);
+  padding: 1rem;
+  border-radius: 100px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #272727;
+}
+
+/**************box of logo**************************/
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo__menu {
+  margin-right: 1rem;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+}
+.logo__img {
   height: 2rem;
 }
 
 /************box search input*********************/
-
-.box-search {
+.search {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 30%;
+  flex: 0 0 35%;
 }
-.search {
+.search__form {
   margin-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.search-input {
-  margin-right: -2px;
-  border: none;
-  border-radius: 100px 0 0 100px;
+.search__input {
+  margin-right: -5rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  border: 1px solid #272727;
+  border-radius: 100px;
   width: 100%;
   padding: 1.2rem 2rem;
   background-color: #121212;
   color: #fff;
 }
-
-.search-input:focus {
+.search__input:focus {
   outline: none;
 }
-
-.search-btn {
+.search__input::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: rgb(172, 172, 172);
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}
+.search__btn {
   background-color: #272727;
-  padding: 1.2rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 0 100px 100px 0;
   border: none;
 }
 
-.search-icon {
-  width: 1.35rem;
-  height: 1.35rem;
-}
-
 /************** box of user *******************/
-.box-user {
+.user {
   display: flex;
   align-items: center;
 }
-
-.box-user > * {
-  margin-left: 3rem;
+.user > * {
+  margin-left: 1.5rem;
 }
 
-.btn {
-  padding: 0 0.5rem;
-  background-color: #27272728;
-  padding: 1.1rem;
-  border-radius: 100px;
-  transition: all 0.2s;
-}
-
-.btn:hover {
-  background-color: #272727;
-}
+/*# sourceMappingURL=/main.fb6bbcaf.css.map */

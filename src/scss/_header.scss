@@ -1,0 +1,93 @@
+.icon {
+  fill: #fff;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.btn {
+  border: none;
+  background-color: #27272728;
+  padding: 1rem;
+  border-radius: 100px;
+  transition: all 0.2s;
+  cursor: pointer;
+  &:hover {
+    background-color: #272727;
+  }
+}
+
+/**************box of logo**************************/
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__menu {
+    margin-right: 1rem;
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 100px;
+    cursor: pointer;
+    border: none;
+  }
+
+  &__img {
+    height: 2rem;
+  }
+}
+
+/************box search input*********************/
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 35%;
+  &__form {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__input {
+    margin-right: -5rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    border: 1px solid #272727;
+    border-radius: 100px;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    background-color: #121212;
+    color: #fff;
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-family: "Roboto", sans-serif;
+      color: rgb(172, 172, 172);
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__btn {
+    background-color: #272727;
+    padding: 1rem 2rem;
+    border-radius: 0 100px 100px 0;
+    border: none;
+  }
+}
+
+/************** box of user *******************/
+.user {
+  display: flex;
+  align-items: center;
+  & > * {
+    margin-left: 1.5rem;
+  }
+}
