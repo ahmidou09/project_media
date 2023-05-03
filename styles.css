@@ -1,3 +1,5 @@
+/************************ base ***********************************/
+
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +16,20 @@ html {
   font-size: 62.5%; /* (10px / 16px) * 100 = 62.5%  => 1rem = 10px */
 }
 
+body {
+  font-family: "Roboto";
+  letter-spacing: 2px;
+}
+
 /* ////////////////////////////////// layout ///////////////////// */
 
 .header {
   height: 6rem;
   background-color: rgb(0, 0, 0);
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .container {
   max-width: 175.4rem;
@@ -39,7 +50,7 @@ html {
   flex: 1;
 
   /* for test */
-  background-color: aqua;
+  background-color: rgb(1, 8, 8);
 }
 .aside {
   flex: 0 0 23%;
@@ -52,4 +63,103 @@ html {
 
   /* for test */
   background-color: black;
+}
+
+/*****************components*****************************/
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.icon {
+  fill: #fff;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+/**************box of logo**************************/
+.box-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.menu-icon {
+  margin-right: 2rem;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.logo-img {
+  height: 2rem;
+}
+
+/************box search input*********************/
+
+.box-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 30%;
+}
+.search {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.search-input {
+  margin-right: -2px;
+  border: none;
+  border-radius: 100px 0 0 100px;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  background-color: #121212;
+  color: #fff;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-btn {
+  background-color: #272727;
+  padding: 1.2rem 2rem;
+  border-radius: 0 100px 100px 0;
+  border: none;
+}
+
+.search-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+/************** box of user *******************/
+.box-user {
+  display: flex;
+  align-items: center;
+}
+
+.box-user > * {
+  margin-left: 3rem;
+}
+
+.btn {
+  padding: 0 0.5rem;
+  background-color: #27272728;
+  padding: 1.1rem;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #272727;
 }
