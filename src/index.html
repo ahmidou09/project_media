@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="logo">
-        <button class="btn logo__menu">
+        <button class="btn logo__menu user__btn">
           <svg class="icon">
             <use xlink:href="img/sprite.svg#icon-menu"></use>
           </svg>
@@ -29,25 +29,25 @@
           </button>
         </form>
 
-        <button class="btn">
+        <button class="btn user__btn">
           <svg class="icon">
             <use xlink:href="img/sprite.svg#icon-mic"></use>
           </svg>
         </button>
       </div>
       <div class="user">
-        <button class="btn">
+        <button class="btn user__btn">
           <svg class="icon">
             <use xlink:href="img/sprite.svg#icon-video-camera"></use>
           </svg>
         </button>
-        <button class="btn">
+        <button class="btn user__btn">
           <svg class="icon">
             <use xlink:href="img/sprite.svg#icon-bell"></use>
           </svg>
         </button>
-        <button class="btn">
-          <svg class="icon">
+        <button class="btn user__btn">
+          <svg class="icon ">
             <use xlink:href="img/sprite.svg#icon-user"></use>
           </svg>
         </button>
@@ -74,28 +74,65 @@
             Jour de pluie au café avec musique jazz relaxante, cheminée et sons
             de pluie
           </h2>
+
           <div class="top-row">
             <div class="top-row__owner">
               <a href="#" class="top-row__renderer">
-                <img src="" alt="" class="top-row__avatar" />
+                <img src="./img/img-4.jpg" alt="" class="top-row__avatar" />
               </a>
 
-              <div class="upload-info">
-                <h1 class="channel-name"></h1>
-                <div class="badge"></div>
-                <span class="owner-sub-count"></span>
+              <div class="top-row__upload-info">
+                <div class="top-row__channel">
+                  <span class="top-row__channel--name">Coffee Shop Vibes</span> 
+                  <span class="top-row__badge">
+                    <svg class="top-row__badge--icon">
+                      <use xlink:href="img/sprite.svg#icon-checkmark"></use>
+                    </svg>
+                  </div>
+                </h1>
+                <span class="top-row__owner-sub-count">127 k abonnés</span>
               </div>
 
-              <button class="subscribe-button"></button>
+              <button class="btn top-row__subscribe-button">S'abonner</button>
             </div>
             <div class="top-row__actions">
-              <div class="top-row__buttons">
-                <button class="top-row__buttons--like"></button>
-                <button class="top-row__buttons--dislike"></button>
-              </div>
-              <button class="top-row__share"></button>
-              <button class="top-row__thanks"></button>
-              <button class="top-row__next"></button>
+                <button class="btn top-row__like">
+                    <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-point-up"></use>
+                    </svg>
+                    <span class="top-row__like--span">
+                      40K
+                    </span>
+                </button>
+                <button class="btn top-row__dislike">
+                  <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-point-down"></use>
+                    </svg>
+                </button>
+              <button class="btn top-row__share">
+                <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-redo2"></use>
+                    </svg>
+                    <span>
+                      Share
+                    </span>
+              </button>
+              <button class="btn top-row__thanks">
+                <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span>
+                      Thanks
+                    </span>
+              </button>
+              <button class="btn top-row__next">
+                <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-cloud-download"></use>
+                    </svg>
+                    <span>
+                      Download
+                    </span>
+              </button>
             </div>
           </div>
         </main>

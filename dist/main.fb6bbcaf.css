@@ -33,6 +33,90 @@ body {
   font-size: 1.8rem;
   letter-spacing: 1px;
   line-height: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.5rem;
+  padding: 0 1rem 0 0;
+}
+.top-row__owner {
+  display: flex;
+}
+.top-row__renderer {
+  margin-right: 1rem;
+}
+.top-row__avatar {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+.top-row__upload-info {
+  margin-right: 3rem;
+}
+.top-row__channel {
+  display: flex;
+  align-items: center;
+}
+.top-row__channel--name {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.top-row__badge {
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: #aaaaaa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+.top-row__badge--icon {
+  fill: #100f0f;
+  width: 1rem;
+  height: 1rem;
+}
+.top-row__owner-sub-count {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #aaa;
+}
+.top-row__subscribe-button {
+  background-color: #d9d9d9;
+  padding: 0 2.25rem;
+}
+.top-row__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-row__actions button {
+  background-color: rgba(65, 63, 62, 0.6156862745);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  margin-left: 1rem;
+}
+.top-row__actions button:hover {
+  background-color: #413f3e;
+}
+.top-row__actions span {
+  margin-left: 1rem;
+}
+.top-row__like {
+  margin: 0 !important;
+  border-radius: 10rem 0 0 10rem !important;
+  border-right: 1px solid #d9d9d9 !important;
+}
+.top-row__dislike {
+  margin: 0 !important;
+  border-radius: 0 10rem 10rem 0 !important;
 }
 
 .header {
@@ -79,14 +163,11 @@ body {
 
 .btn {
   border: none;
-  background-color: rgba(39, 39, 39, 0.1568627451);
-  padding: 1rem;
   border-radius: 100px;
   transition: all 0.2s;
   cursor: pointer;
-}
-.btn:hover {
-  background-color: #272727;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 /**************box of logo**************************/
@@ -123,12 +204,12 @@ body {
 }
 .search__input {
   margin-right: -5rem;
+  padding: 1rem 2rem;
   font-size: 1.6rem;
   font-family: inherit;
   border: 1px solid #272727;
   border-radius: 100px;
   width: 100%;
-  padding: 1.2rem 2rem;
   background-color: #121212;
   color: #fff;
 }
@@ -144,7 +225,7 @@ body {
 }
 .search__btn {
   background-color: #272727;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem;
   border-radius: 0 100px 100px 0;
   border: none;
 }
@@ -156,6 +237,13 @@ body {
 }
 .user > * {
   margin-left: 1.5rem;
+}
+.user__btn {
+  background-color: rgba(39, 39, 39, 0.1568627451);
+  padding: 1rem;
+}
+.user__btn:hover {
+  background-color: #272727;
 }
 
 /*# sourceMappingURL=/main.fb6bbcaf.css.map */
