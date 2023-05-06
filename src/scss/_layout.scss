@@ -16,12 +16,13 @@
 }
 .main {
   flex: 1;
+  padding: 1rem 2rem 1rem 0;
 }
 .aside {
   flex: 0 0 23%;
 
   /* for test */
-  background-color: yellowgreen;
+  background-color: #0f0f0f;
   height: 120rem;
 }
 .footer {

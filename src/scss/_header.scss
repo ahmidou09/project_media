@@ -75,11 +75,11 @@
   }
 
   &__btn {
-    background-color: #27272728;
+    background-color: $color-grey-light-1;
     padding: 1rem;
   }
 
   &__btn:hover {
-    background-color: #272727;
+    background-color: $color-grey-light-2;
   }
 }
