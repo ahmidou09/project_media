@@ -13,21 +13,18 @@
 .content {
   display: flex;
   padding: 2rem 2rem;
+
+   @media only screen and (max-width: 1000px) {
+       flex-direction: column;
+    }
 }
 .main {
   flex: 1;
   padding: 1rem 2rem 1rem 0;
 }
 .aside {
-  flex: 0 0 23%;
-
-  /* for test */
+  width: 400px;
+  flex-shrink: 0;
   background-color: #0f0f0f;
-  height: 120rem;
 }
-.footer {
-  height: 7rem;
 
-  /* for test */
-  background-color: rgb(44, 17, 175);
-}

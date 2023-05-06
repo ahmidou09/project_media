@@ -120,6 +120,7 @@
   border-radius: 5px;
   transition: all 0.2s;
   font-size: 1.4rem;
+  margin-bottom: 2rem;
 
   &:hover {
     background-color: $color-grey-light-2;
@@ -135,5 +136,33 @@
   button {
     background-color: transparent;
     color: #fff;
+  }
+}
+
+.div-commenting{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #fff;
+  font-size: 1.6rem;
+  
+  &__btn{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border: none;
+  }
+  &__sort-menu{
+    margin-left: 2rem;
+  }
+
+  svg {
+    margin-right: 1rem;
+  }
+
+  span {
+    font-weight: 600;
+    text-transform: capitalize;
   }
 }
